@@ -1,6 +1,16 @@
 BeyondPicker
 ============
 
+![Main UI](https://raw.github.com/porter-liu/BeyondPicker/master/docs/main_ui.gif)
+
+!["Copy" Menu](https://raw.github.com/porter-liu/BeyondPicker/master/docs/copy_menu.gif)
+
+![Template](https://raw.github.com/porter-liu/BeyondPicker/master/docs/template.gif)
+
+![Schemes](https://raw.github.com/porter-liu/BeyondPicker/master/docs/schemes.gif)
+
+![Editing Color](https://raw.github.com/porter-liu/BeyondPicker/master/docs/editing_color.gif)
+
 有没有经常想要在自己的网页或者软件中借鉴别人的配色又不知道是什么颜色的时候？BeyondPicker 就是给有这样需求的您准备的！它可以捕捉显示在屏幕上任意一点的颜色并加以分析，对目标区域的放大显示使取色更加精准。有了 BeyondPicker，分析配色，举手之劳！
 
 特性列表：
