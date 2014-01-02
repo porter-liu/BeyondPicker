@@ -1,0 +1,602 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_RED                 ICON    DISCARDABLE     "res\\Red.ico"
+IDI_GREEN               ICON    DISCARDABLE     "res\\Green.ico"
+IDI_POSITION            ICON    DISCARDABLE     "res\\Position.ico"
+IDI_TOPMOST             ICON    DISCARDABLE     "res\\Topmost.ico"
+IDI_NULL                ICON    DISCARDABLE     "res\\Null.ico"
+IDI_COLOR_SCHEMES       ICON    DISCARDABLE     "res\\ColorSchemes.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 187, 105
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "Tahoma"
+BEGIN
+END
+
+IDD_ABOUT_PANEL DIALOG DISCARDABLE  0, 0, 188, 86
+STYLE WS_CHILD | WS_VISIBLE
+FONT 8, "Tahoma"
+BEGIN
+    CTEXT           "xxx vx.x.x",IDC_NAME_VER,7,34,174,10
+    ICON            IDR_MAINFRAME,IDC_STATIC,85,7,20,20
+    CTEXT           "访问 PiSoft 网站，获取更多精彩软件",IDC_HYPERLINK,7,71,
+                    174,8
+    CTEXT           "版权所有 (C) PiSoft 2002-2005",IDC_STATIC,7,51,174,8,
+                    SS_CENTERIMAGE
+END
+
+IDD_DONATE_PANEL DIALOGEX 0, 0, 188, 91
+STYLE WS_CHILD
+FONT 8, "Tahoma", 0, 0, 0x1
+BEGIN
+    CTEXT           "向 PiSoft 捐赠",IDC_DONATE,7,75,174,8
+    LTEXT           "　　您当前所使用的 BeyondPicker 是一个免费软件，无需支付任何费用您就可以使用它的全部功能，如果您觉得 BeyondPicker 是一个有用的工具并且得到了它的帮助，我们深感荣幸！为了让 BeyondPicker 变得更好，您可以给我们提出宝贵的建议，也可以向 PiSoft 捐赠。捐赠所得将会用于支付我们的域名和虚拟主机费用及用于更多免费软件的开发，谢谢您的支持！",
+                    IDC_STATIC,7,7,174,65,0,WS_EX_STATICEDGE
+END
+
+IDD_COPYRIGHT_PANEL DIALOGEX 0, 0, 187, 90
+STYLE WS_CHILD
+FONT 8, "Tahoma", 0, 0, 0x1
+BEGIN
+    LTEXT           "　　本软件是一个免费软件，版权归 PiSoft 所有。用户在承诺不用于商业目的，也不对文件及其附件进行任何更改的条件下，不需要为使用本软件支付任何费用。我们不为使用本软件的后果承担任何责任。本软件只能用于网上传播，未经允许，不得以任何载体形式（光盘、软盘等）发布，不得用于商业目的。否则保留追究一切责任的权利。",
+                    IDC_STATIC,7,7,173,65,0,WS_EX_STATICEDGE
+    LTEXT           "如果需要用于商业目的，请与我们联系",IDC_CONTACT_US,25,
+                    75,137,8
+END
+
+IDD_FEEDBACK_PANEL DIALOG DISCARDABLE  0, 0, 187, 100
+STYLE WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    CTEXT           "使用心得和感受想要和大家分享？\n觉得 BeyondPicker 还缺点什么？\n发现错误，想要报告？\n有更好的点子？",
+                    IDC_STATIC,7,7,173,34
+    CTEXT           "都请告诉我们",IDC_TELLUS,7,50,173,8,SS_CENTERIMAGE
+    CTEXT           "您的参与让我们做得更好！",IDC_STATIC,7,72,173,8,
+                    SS_CENTERIMAGE
+END
+
+IDD_TEMPLATE DIALOG DISCARDABLE  0, 0, 223, 95
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Templates"
+FONT 8, "Tahoma"
+BEGIN
+    COMBOBOX        IDC_SN,26,7,82,86,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_NAME,26,27,190,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FORMAT,26,49,190,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "保存",IDC_SAVE,7,74,50,14,WS_DISABLED
+    PUSHBUTTON      "删除",IDC_DELETE,113,74,50,14
+    PUSHBUTTON      "使用预制模板",IDC_DEFAULT,166,74,50,14
+    LTEXT           "模板",IDC_STATIC,7,9,16,8
+    LTEXT           "名称",IDC_STATIC,7,30,16,8
+    LTEXT           "格式",IDC_STATIC,7,51,16,8
+    PUSHBUTTON      "测试",IDC_TEST,60,74,50,14
+END
+
+IDD_COLOR_SCHEMES DIALOG DISCARDABLE  0, 0, 200, 141
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Color Schemes"
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "Tree1",IDC_COLOR_SCHEMES,"SysTreeView32",
+                    TVS_SHOWSELALWAYS | TVS_FULLROWSELECT | WS_BORDER | 
+                    WS_TABSTOP,3,3,194,123
+    LTEXT           "单击右键显示快捷菜单，双击展开/折叠配色方案",IDC_STATIC,
+                    3,130,194,8
+END
+
+IDD_EDIT_COLOR DIALOGEX 0, 0, 187, 87
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Color"
+FONT 8, "Tahoma"
+BEGIN
+    COMBOBOX        IDC_SCHEMES,50,7,130,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_DESC,50,44,130,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,29,66,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,107,66,50,14
+    RTEXT           "Description:",IDC_STATIC,7,46,39,8
+    RTEXT           "Color:",IDC_STATIC,7,28,39,8
+    LTEXT           "",IDC_COLOR,50,26,33,13,0,WS_EX_STATICEDGE
+    RTEXT           "Scheme:",IDC_STATIC,7,9,39,8
+    EDITTEXT        IDC_COLOR_STRING,87,28,93,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+END
+
+IDD_GET_STRING DIALOG DISCARDABLE  0, 0, 187, 63
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Scheme name"
+FONT 8, "Tahoma"
+BEGIN
+    EDITTEXT        IDC_STRING,7,21,173,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,27,42,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,110,42,50,14
+    LTEXT           "Static",IDC_TEXT,7,7,173,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_ABOUT_PANEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_DONATE_PANEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 84
+    END
+
+    IDD_COPYRIGHT_PANEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_FEEDBACK_PANEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_TEMPLATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_COLOR_SCHEMES, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 197
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_EDIT_COLOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_GET_STRING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Set Templates...",           IDC_TEMPLATE
+        MENUITEM "E&xit",                       IDC_EXIT
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Copy color string",          IDC_COPY
+        MENUITEM "C&ustom color...",            IDC_CUSTOM
+        MENUITEM "C&olor schemes...",           IDC_COLOR_SCHEMES
+        MENUITEM "&Add coloor...",              IDC_ADD_COLOR
+        MENUITEM "&Dodge cursor",               IDC_DODGE_CURSOR
+        MENUITEM "&Zoom in cursor region",      IDC_IS_ZOOM
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About",                      IDC_ABOUT
+    END
+END
+
+IDR_MENU_GROUP MENU DISCARDABLE 
+BEGIN
+    POPUP "Group Menu"
+    BEGIN
+        MENUITEM "&Rename",                     IDC_RENAME
+        MENUITEM "&Delete",                     IDC_DELETE
+        MENUITEM "&Add color...",               IDC_ADD_COLOR
+    END
+END
+
+IDR_MENU_COLOR MENU DISCARDABLE 
+BEGIN
+    POPUP "Color Menu"
+    BEGIN
+        MENUITEM "&Modify",                     IDC_MODIFY
+        MENUITEM "&Delete",                     IDC_DELETE
+        MENUITEM "&Copy",                       IDC_COPY
+        MENUITEM "&Set current color",          IDC_SET_CURRENT_COLOR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_BUTTON32774
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR             BITMAP  DISCARDABLE     "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CANNOTDO            CURSOR  DISCARDABLE     "res\\CanNotDo.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// ANI
+//
+
+IDR_TOPMOST             ANI     DISCARDABLE     "res\\Topmost.ani"
+IDR_NOTOPMOST           ANI     DISCARDABLE     "res\\NoTopmost.ani"
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\BeyondPicker.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MAINDLG DIALOGEX 0, 0, 201, 68
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "G",IDC_STATIC,119,22,8,8
+    CONTROL         "Slider1",IDC_MULTIPLE,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_VERT | WS_TABSTOP,70,3,11,62
+    LTEXT           "",IDC_COLOR,173,3,25,30,0,WS_EX_STATICEDGE
+    LTEXT           "",IDC_ZOOM,3,3,66,62,0,WS_EX_STATICEDGE
+    LTEXT           "HTML",IDC_STATIC,93,4,20,8
+    LTEXT           "R",IDC_STATIC,93,22,8,8
+    LTEXT           "B",IDC_STATIC,145,22,8,8
+    LTEXT           "2",IDC_STATIC,82,3,8,8
+    LTEXT           "10",IDC_STATIC,82,56,8,8
+    LTEXT           "7",IDC_STATIC,82,30,8,8
+    CTEXT           "#000000",IDC_HTML,117,3,51,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "0",IDC_RED,101,20,15,12,SS_CENTERIMAGE,WS_EX_STATICEDGE
+    CTEXT           "0",IDC_GREEN,127,20,15,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "0",IDC_BLUE,153,20,15,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "TopMost window",IDC_STATIC,122,47,76,8
+    ICON            "",IDC_TOPMOST,93,40,20,20,0,WS_EX_STATICEDGE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAINDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 198
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 65
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,8,0,0
+ PRODUCTVERSION 1,8,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "PiSoft\0"
+            VALUE "FileDescription", "BeyondPicker\0"
+            VALUE "FileVersion", "1, 8, 0, 0\0"
+            VALUE "InternalName", "BeyondPicker\0"
+            VALUE "LegalCopyright", "Copyright (C) PiSoft 2002-2005\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "BeyondPicker.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "BeyondPicker\0"
+            VALUE "ProductVersion", "1, 8, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "BeyondPicker"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ATL_IDS_SCSIZE          "Change the window size"
+    ATL_IDS_SCMOVE          "Change the window position"
+    ATL_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    ATL_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    ATL_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    ATL_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    ATL_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ATL_IDS_SCRESTORE       "Restore the window to normal size"
+    ATL_IDS_SCTASKLIST      "Activate Task List"
+    ATL_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ATL_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ATL_IDS_MRU_FILE        "Open this document"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
